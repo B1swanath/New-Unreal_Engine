@@ -1,0 +1,184 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Hover</title>
+    <style>
+      /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Menu Styles */
+nav {
+    background-color: #333;
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-menu li {
+    position: relative; /* Needed for the dropdown */
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    background-color: #333;
+    transition: background-color 0.3s;
+}
+
+.nav-menu li a:hover {
+    background-color: #575757;
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    background-color: #333;
+    min-width: 180px;
+}
+
+.dropdown-menu li a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #333;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #575757;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+
+
+/* addition code */
+
+.nav-menu #globle1{
+  position: relative;
+}
+
+.nav-menu #globle1 .AA{
+  display: block;
+}
+
+.nav-menu #globle1 #DD1{
+  display: none;
+  position: absolute;
+}
+
+.nav-menu #globle1:hover #DD1{
+  display: block;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+
+            <li class="dropdown">
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                  <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+                  </svg>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">SEO Services</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Contact</a></li>
+
+
+
+            <div class="text-end mx-2" id="globle1">
+              <a href="#" class="link-body-emphasis text-decoration-none" id="AA">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+                  </svg>
+              </a>
+              <ul class="dropdown-menu gap-1 p-2 mx-2 border-0 shadow w-220px" id="DD1" data-bs-theme="dark">
+                <li><a class="dropdown-item rounded-2" href="#">English</a></li>
+                <li><a class="dropdown-item rounded-2" href="#">Hindi</a></li>
+                <li><a class="dropdown-item rounded-2" href="#">日本語</a></li>
+                <li><a class="dropdown-item rounded-2" href="#">Français</a></li>
+              </ul>
+            </div>
+
+
+
+        </ul>
+    </nav>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Zoom on Hover</title>
+    <style>
+        /* Container to hold the image */
+        .image-container {
+            width: 300px; /* Adjust the size of the image container */
+            height: 300px; /* Adjust the size of the image container */
+            overflow: hidden; /* Hide overflowed image parts */
+            position: relative;
+        }
+
+        /* Image styling */
+        .image-container img {
+            width: 100%; /* Make the image fill the container */
+            height: 100%;
+            object-fit: cover; /* Ensure the image covers the area without distortion */
+            transition: transform 0.5s ease; /* Smooth transition when zooming */
+        }
+
+        /* Zoom effect on hover */
+        .image-container:hover img {
+            transform: scale(1.2); /* Zoom in by 20% on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="img/cyberpunk-street-environment.webp" alt="Zoom Image">
+    </div>
+
+</body>
+</html>
+
